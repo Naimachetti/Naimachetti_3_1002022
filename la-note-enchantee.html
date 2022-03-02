@@ -12,6 +12,14 @@
     <title>La note enchantée-Oh my food</title>
 </head>
 <body>
+    <!------------------------------LOADER-------------------------->
+    <div class="conteneur_chargement">
+        <div class="chargement">
+            <div><p class="oh">OH</p></div>
+            <div><P class="my">MY</P></div>
+            <div><P class="food">FOOD</P></div>
+        </div>
+    </div>
 <!------------------------------HEADER-------------------------->
     <header>
         <a href="la-palette-du-goût.html">
@@ -24,171 +32,183 @@
     </div>
 <!------------------------------SECTION ENTETE_MENU-------------------------->
    <main id="conteneur_menus">
-    <section class="entete_menus">
-        <div class="titre_menu">
-            <h2>La note enchantée</h2>
-            <div class="entete_menus-icone">
-                <i class="far hrt-empty fa-heart"></i>
-            </div>
-        </div>
-    </section>
-<!------------------------------SECTION CARTES_ENTREES-------------------------->
-    <section class="cartes_entrees">
-        <h3>Entrées</h3>
-        <div class="cartes_entrees-menu-1">
-            <div class="carte_entrees-description">
-                <h4>Ravioles de foie gras</h4>
-                <p>accompagnés de leur crème à la truffe</p>
-            </div>
-            <div class="carte_entrees-tarif">
-                <p>25€</p>
-            </div>
-            <div class="carte_entrees-validation">
-                <div class="carte_entrees-icone">
-                    <i class="fas fa-check"></i>
+        <section class="entete_menus">
+            <div class="titre_menu">
+                <h2>La note enchantée</h2>
+                <div class="entete_menus-icone">
+                    <i class="far hrt-empty fa-heart"></i>
+                    <i class="far hrt-empty fa-heart"></i>
                 </div>
             </div>
-        </div>
-        <div class="cartes_entrees-menu-2">
-            <div class="carte_entrees-description">
-                <h4>Caviar osciètre</h4>
-                <p>Sur blini à la farine de blé noir</p>
+        </section>
+    <!------------------------------SECTION CARTES_ENTREES-------------------------->
+        <section class="cartes_entrees">
+            <h3>Entrées</h3>
+            <div class="entree_menu">
+                <input class="input_menu" id="entree_menu1" type="checkbox" >
+                <label class="menu-general" for="entree_menu1">
+                    <span class="entree_description_tarif">
+                        <span class="entree_description">
+                            <span class="texte1">Ravioles de foie gras</span>
+                            <span  class="texte2">Accompagnés de leur crème à la truffe</span>
+                        </span>
+                        <span class="tarif">25€</span>
+                    </span>
+                    <span class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </label>
             </div>
-            <div class="carte_entrees-tarif">
-                <p>35€</p>
+            <div class="entree_menu">
+                <input class="input_menu" id="entree_menu2" type="checkbox" >
+                <label class="menu-general" for="entree_menu2">
+                    <span class="entree_description_tarif">
+                        <span class="entree_description">
+                            <span class="texte1">Caviar osciètre</span>
+                            <span class="texte2">Sur blini à la farine de blé noir</span>
+                        </span>
+                        <span class="tarif">35€</span>
+                    </span>
+                    <span class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </label>
             </div>
-            <div class="carte_entrees-validation">
-                <div class="carte_entrees-icone">
-                    <i class="fas fa-check"></i>
+            <div class="entree_menu">
+                <input class="input_menu" id="entree_menu3" type="checkbox" >
+                <label class="menu-general" for="entree_menu3">
+                    <span class="entree_description_tarif">
+                        <span class="entree_description">
+                            <span class="texte1">Homard et espuma de potiront</span>
+                            <span class="texte2">Mariné aux zests d'orange</span>
+                        </span>
+                        <span class="tarif">20€</span>
+                    </span>
+                    <span class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </label>
+            </div>
+            <div class="entree_menu">
+                <input class="input_menu" id="entree_menu4" type="checkbox" >
+                <label class="menu-general" for="entree_menu4">
+                    <span class="entree_description_tarif">
+                        <span class="entree_description">
+                            <span class="texte1">Fois gras de canard cuit entier</span>
+                            <span class="texte2">Confiture de figue et pain toasté</span>
+                        </span>
+                        <span class="tarif">35€</span>
+                    </span>
+                    <span class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </label>
+            </div>
+        </section>
+        <!------------------------------SECTION CARTES_PLATS-------------------------->
+        <section class="cartes_plats">
+            <h3>Plats</h3>
+            <div class="plat_menu">
+                <input class="input_menu" id="plat_menu1" type="checkbox" >
+                <label class="menu-general" for="plat_menu1">
+                    <span class="plat_description_tarif">
+                        <span class="plat_description">
+                            <span class="texte1">Noix de coquilles Saint-Jacques</span>
+                            <span class="texte2">Sur lit de purée de céleri-rave</span>
+                        </span>
+                        <span class="tarif">40€</span>
+                    </span>
+                    <span class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </label>
+            </div>
+
+            <div class="plat_menu">
+                <input class="input_menu" id="plat_menu2" type="checkbox" >
+                <label class="menu-general" for="plat_menu2">
+                    <span class="plat_description_tarif">
+                        <span class="plat_description">
+                            <span class="texte1">Langoustine poélée</span>
+                            <span class="texte2">Purée de patate douce</span>
+                        </span>
+                        <span class="tarif">35€</span>
+                    </span>
+                    <span class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </label>
+            </div>
+            <div class="plat_menu">
+                <input class="input_menu" id="plat_menu3" type="checkbox" >
+                <label class="menu-general" for="plat_menu3">
+                    <span class="plat_description_tarif">
+                        <span class="plat_description">
+                            <span class="texte2">Mijoté de queue de boeuf</span>
+                            <span class="texte2">Et riz sauvage aux zestes de citron</span>
+                        </span>
+                        <span class="tarif">44€</span>
+                    </span>
+                    <span class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </label>
+            </div>
+        </section>
+        <!------------------------------SECTION CARTES_DESSERTS-------------------------->    
+        <section class="cartes_desserts">
+            <h3>Desserts</h3>
+                <div class="dessert_menu">
+                    <input class="input_menu" id="dessert_menu1" type="checkbox" >
+                    <label class="menu-general" for="dessert_menu1">
+                        <span class="dessert_description_tarif">
+                            <span class="dessert_description">
+                                <span class="texte1">Macaron noisette et chocolat</span>
+                                <span class="texte2">Glace au caramel brun et sel de Guérande</span>
+                            </span>
+                            <span class="tarif">18€</span>
+                        </span>
+                        <span class="validation">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </label>
                 </div>
-            </div>
-        </div>
-        <div class="cartes_entrees-menu-3">
-            <div class="carte_entrees-description">
-                <h4>Homard et espuma de potiront</h4>
-                <p>Mariné aux zests d'orange</p>
-            </div>
-            <div class="carte_entrees-tarif">
-                <p>20€</p>
-            </div>
-            <div class="carte_entrees-validation">
-                <div class="carte_entrees-icone">
-                    <i class="fas fa-check"></i>
+                <div class="dessert_menu">
+                    <input class="input_menu" id="dessert_menu2" type="checkbox" >
+                    <label class="menu-general" for="dessert_menu2">
+                        <span class="dessert_description_tarif">
+                            <span class="dessert_description">
+                                <span class="texte1">Baba au Rhum revisité</span>
+                                <span class="texte2">Avec son coulis de citron</span>
+                            </span>
+                            <span class="tarif">22€</span>
+                        </span>
+                        <span class="validation">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </label>
                 </div>
-            </div>
-        </div> 
-        <div class="cartes_entrees-menu-4">
-            <div class="carte_entrees-description">
-                <h4>fois gras de canard cuit entier</h4>
-                <p>confiture de figue et pain toasté</p>
-            </div>
-            <div class="carte_entrees-tarif">
-                <p>35€</p>
-            </div>
-            <div class="carte_entrees-validation">
-                <div class="carte_entrees-icone">
-                    <i class="fas fa-check"></i>
+                <div class="dessert_menu">
+                    <input class="input_menu" id="dessert_menu3" type="checkbox" >
+                    <label class="menu-general" for="dessert_menu3">
+                        <span class="dessert_description_tarif">
+                            <span class="dessert_description">
+                                <span class="texte1">Tarte au citron meringuée</span>
+                                <span class="texte2">Destructurée</span>
+                            </span>
+                            <span class="tarif">23€</span>
+                        </span>
+                        <span class="validation">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </label>
                 </div>
-            </div>
-        </div>
-    </section>
-<!------------------------------SECTION CARTES_PLATS-------------------------->
-    <section class="cartes_plats">
-        <h3>Plats</h3>
-        <div class="cartes_plats-menu-1">
-            <div class="carte_plats-description">
-                <h4>Noix de coquilles Saint-Jacques</h4>
-                <p>Sur lit de purée de céleri-rave</p>
-            </div>
-            <div class="carte_plats-tarif">
-                <p>40€</p>
-            </div>
-            <div class="carte_plats-validation">
-                <div class="carte_plats-icone">
-                    <i class="fas fa-check"></i>
-                </div>
-            </div>
-        </div>
-        <div class="cartes_plats-menu-2">
-            <div class="carte_plats-description">
-                <h4>Langoustine poélée</h4>
-                <p>Purée de patate douce</p>
-            </div>
-            <div class="carte_plats-tarif">
-                <p>35€</p>
-            </div>
-            <div class="carte_plats-validation">
-                <div class="carte_plats-icone">
-                    <i class="fas fa-check"></i>
-                </div>
-            </div>
-        </div>
-        <div class="cartes_plats-menu-3">
-            <div class="carte_plats-description">
-                <h4>Mijoté de queue de boeuf</h4>
-                <p>Et riz sauvage aux zestes de citron</p>
-            </div>
-            <div class="carte_plats-tarif">
-                <p>44€</p>
-            </div>
-            <div class="carte_plats-validation">
-                <div class="carte_plats-icone">
-                    <i class="fas fa-check"></i>
-                </div>
-            </div>
-        </div> 
-    </section>
-<!------------------------------SECTION CARTES_DESSERTS-------------------------->    
-    <section class="cartes_desserts">
-        <h3>Desserts</h3>
-        <div class="cartes_desserts-menu-1">
-            <div class="carte_desserts-description">
-                <h4>Macaron noisette et chocolat</h4>
-                <p>Glace au caramel brun et sel de Guérande</p>
-            </div>
-            <div class="carte_desserts-tarif">
-                <p>18€</p>
-            </div>
-            <div class="carte_desserts-validation">
-                <div class="carte_desserts-icone">
-                    <i class="fas fa-check"></i>
-                </div>
-            </div>
-        </div>
-        <div class="cartes_desserts-menu-2">
-            <div class="carte_desserts-description">
-                <h4>Baba au Rhum revisité</h4>
-                <p>Avec son coulis de citron</p>
-            </div>
-            <div class="carte_desserts-tarif">
-                <p>22€</p>
-            </div>
-            <div class="carte_desserts-validation">
-                <div class="carte_desserts-icone">
-                    <i class="fas fa-check"></i>
-                </div>
-            </div>
-        </div>
-        <div class="cartes_desserts-menu-3">
-            <div class="carte_desserts-description">
-                <h4>Tarte au citron meringuée</h4>
-                <p>Destructurée</p>
-            </div>
-            <div class="carte_desserts-tarif">
-                <p>23€</p>
-            </div>
-            <div class="carte_desserts-validation">
-                <div class="carte_desserts-icone">
-                    <i class="fas fa-check"></i>
-                </div>
-            </div>
-        </div> 
-    </section>
+        </section>
 <!------------------------------SECTION COMMANDER-------------------------->
-    <section class="commande">
-        <h5>Commander</h5>
-    </section>
-   </main>
+        <section class="commande">
+            <h5>Commander</h5>
+        </section>
+    </main>
 <!------------------------------FOOTER-------------------------->
     <footer>
         <div class="section_footer">

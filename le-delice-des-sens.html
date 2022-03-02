@@ -12,6 +12,14 @@
     <title>Le délice des sens-Oh my food</title>
 </head>
 <body>
+    <!------------------------------LOADER-------------------------->
+    <div class="conteneur_chargement">
+        <div class="chargement">
+            <div><p class="oh">OH</p></div>
+            <div><P class="my">MY</P></div>
+            <div><P class="food">FOOD</P></div>
+        </div>
+    </div>
 <!------------------------------HEADER-------------------------->
     <header>
         <a href="a-la-française.html">
@@ -29,146 +37,157 @@
                 <h2>Le délice des sens</h2>
                 <div class="entete_menus-icone">
                     <i class="far hrt-empty fa-heart"></i>
+                    <i class="far hrt-empty fa-heart"></i>
                 </div>
             </div>
         </section>
     <!------------------------------SECTION CARTES_ENTREES-------------------------->
         <section class="cartes_entrees">
             <h3>Entrées</h3>
-            <div class="cartes_entrees-menu-1">
-                <div class="carte_entrees-description">
-                    <h4>Tartare de thon</h4>
-                    <p>Assaisonné au yuzu</p>
-                </div>
-                <div class="carte_entrees-tarif">
-                    <p>25€</p>
-                </div>
-                <div class="carte_entrees-validation">
-                    <div class="carte_entrees-icone">
-                        <i class="fas fa-check"></i>
-                    </div>
-                </div>
+            <div class="entree_menu">
+                <input class="input_menu" id="entree_menu1" type="checkbox" >
+                <label class="menu-general" for="entree_menu1">
+                    <span class="entree_description_tarif">
+                        <span class="entree_description">
+                            <span class="texte1">Tartare de thon</span>
+                            <span  class="texte2">Assaisonné au yuzu</span>
+                        </span>
+                        <span class="tarif">25€</span>
+                    </span>
+                    <span class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </label>
             </div>
-            <div class="cartes_entrees-menu-2">
-                <div class="carte_entrees-description">
-                    <h4>Bouchée de homard croustillant</h4>
-                    <p>Et sa farandole de petits légumes</p>
-                </div>
-                <div class="carte_entrees-tarif">
-                    <p>35€</p>
-                </div>
-                <div class="carte_entrees-validation">
-                    <div class="carte_entrees-icone">
-                        <i class="fas fa-check"></i>
-                    </div>
-                </div>
+            <div class="entree_menu">
+                <input class="input_menu" id="entree_menu2" type="checkbox" >
+                <label class="menu-general" for="entree_menu2">
+                    <span class="entree_description_tarif">
+                        <span class="entree_description">
+                            <span class="texte1">Bouchée de homard croustillant</span>
+                            <span class="texte2">Et sa farandole de petits légumes</span>
+                        </span>
+                        <span class="tarif">35€</span>
+                    </span>
+                    <span class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </label>
             </div>
-            <div class="cartes_entrees-menu-3">
-                <div class="carte_entrees-description">
-                    <h4>Velouté de cèpes</h4>
-                    <p>Aux truffes</p>
-                </div>
-                <div class="carte_entrees-tarif">
-                    <p>20€</p>
-                </div>
-                <div class="carte_entrees-validation">
-                    <div class="carte_entrees-icone">
-                        <i class="fas fa-check"></i>
-                    </div>
-                </div>
-            </div> 
+            <div class="entree_menu">
+                <input class="input_menu" id="entree_menu3" type="checkbox" >
+                <label class="menu-general" for="entree_menu3">
+                    <span class="entree_description_tarif">
+                        <span class="entree_description">
+                            <span class="texte1">Velouté de cèpes</span>
+                            <span class="texte2">Aux truffes</span>
+                        </span>
+                        <span class="tarif">20€</span>
+                    </span>
+                    <span class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </label>
+            </div>
         </section>
     <!------------------------------SECTION CARTES_PLATS-------------------------->
         <section class="cartes_plats">
             <h3>Plats</h3>
-            <div class="cartes_plats-menu-1">
-                <div class="carte_plats-description">
-                    <h4>Poulet rôti aux herbes de provence</h4>
-                    <p>Et sa crème de truffe</p>
-                </div>
-                <div class="carte_plats-tarif">
-                    <p>40€</p>
-                </div>
-                <div class="carte_plats-validation">
-                    <div class="carte_plats-icone">
-                        <i class="fas fa-check"></i>
-                    </div>
-                </div>
+            <div class="plat_menu">
+                <input class="input_menu" id="plat_menu1" type="checkbox" >
+                <label class="menu-general" for="plat_menu1">
+                    <span class="plat_description_tarif">
+                        <span class="plat_description">
+                            <span class="texte1">Poulet rôti aux herbes de provence</span>
+                            <span class="texte2">Et sa crème de truffe</span>
+                        </span>
+                        <span class="tarif">40€</span>
+                    </span>
+                    <span class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </label>
             </div>
-            <div class="cartes_plats-menu-2">
-                <div class="carte_plats-description">
-                    <h4>Langouste rôtie</h4>
-                    <p>Et ses légumes de saison</p>
-                </div>
-                <div class="carte_plats-tarif">
-                    <p>35€</p>
-                </div>
-                <div class="carte_plats-validation">
-                    <div class="carte_plats-icone">
-                        <i class="fas fa-check"></i>
-                    </div>
-                </div>
+
+            <div class="plat_menu">
+                <input class="input_menu" id="plat_menu2" type="checkbox" >
+                <label class="menu-general" for="plat_menu2">
+                    <span class="plat_description_tarif">
+                        <span class="plat_description">
+                            <span class="texte1">Langouste rôtie</span>
+                            <span class="texte2">Et ses légumes de saison</span>
+                        </span>
+                        <span class="tarif">35€</span>
+                    </span>
+                    <span class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </label>
             </div>
-            <div class="cartes_plats-menu-3">
-                <div class="carte_plats-description">
-                    <h4>Côte de boeuf angus</h4>
-                    <p>Et sa purée de panais</p>
-                </div>
-                <div class="carte_plats-tarif">
-                    <p>44€</p>
-                </div>
-                <div class="carte_plats-validation">
-                    <div class="carte_plats-icone">
-                        <i class="fas fa-check"></i>
-                    </div>
-                </div>
-            </div> 
+            <div class="plat_menu">
+                <input class="input_menu" id="plat_menu3" type="checkbox" >
+                <label class="menu-general" for="plat_menu3">
+                    <span class="plat_description_tarif">
+                        <span class="plat_description">
+                            <span class="texte2">Côte de boeuf angus</span>
+                            <span class="texte2">Et sa purée de panais</span>
+                        </span>
+                        <span class="tarif">44€</span>
+                    </span>
+                    <span class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </label>
+            </div>
         </section>
     <!------------------------------SECTION CARTES_DESSERTS-------------------------->    
         <section class="cartes_desserts">
             <h3>Desserts</h3>
-            <div class="cartes_desserts-menu-1">
-                <div class="carte_desserts-description">
-                    <h4>farandole de desserts</h4>
-                    <p>Du chef</p>
+                <div class="dessert_menu">
+                    <input class="input_menu" id="dessert_menu1" type="checkbox" >
+                    <label class="menu-general" for="dessert_menu1">
+                        <span class="dessert_description_tarif">
+                            <span class="dessert_description">
+                                <span class="texte1">farandole de desserts</span>
+                                <span class="texte2">Du chef</span>
+                            </span>
+                            <span class="tarif">18€</span>
+                        </span>
+                        <span class="validation">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </label>
                 </div>
-                <div class="carte_desserts-tarif">
-                    <p>18€</p>
+                <div class="dessert_menu">
+                    <input class="input_menu" id="dessert_menu2" type="checkbox" >
+                    <label class="menu-general" for="dessert_menu2">
+                        <span class="dessert_description_tarif">
+                            <span class="dessert_description">
+                                <span class="texte1">Crème brulée</span>
+                                <span class="texte2">Revisité</span>
+                            </span>
+                            <span class="tarif">22€</span>
+                        </span>
+                        <span class="validation">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </label>
                 </div>
-                <div class="carte_desserts-validation">
-                    <div class="carte_desserts-icone">
-                        <i class="fas fa-check"></i>
-                    </div>
+                <div class="dessert_menu">
+                    <input class="input_menu" id="dessert_menu3" type="checkbox" >
+                    <label class="menu-general" for="dessert_menu3">
+                        <span class="dessert_description_tarif">
+                            <span class="dessert_description">
+                                <span class="texte1">Tiramisu</span>
+                                <span class="texte2">À la noisette</span>
+                            </span>
+                            <span class="tarif">23€</span>
+                        </span>
+                        <span class="validation">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </label>
                 </div>
-            </div>
-            <div class="cartes_desserts-menu-2">
-                <div class="carte_desserts-description">
-                    <h4>Crème brulée</h4>
-                    <p>Revisitée</p>
-                </div>
-                <div class="carte_desserts-tarif">
-                    <p>22€</p>
-                </div>
-                <div class="carte_desserts-validation">
-                    <div class="carte_desserts-icone">
-                        <i class="fas fa-check"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="cartes_desserts-menu-3">
-                <div class="carte_desserts-description">
-                    <h4>Tiramisu</h4>
-                    <p>À la noisette</p>
-                </div>
-                <div class="carte_desserts-tarif">
-                    <p>23€</p>
-                </div>
-                <div class="carte_desserts-validation">
-                    <div class="carte_desserts-icone">
-                        <i class="fas fa-check"></i>
-                    </div>
-                </div>
-            </div> 
         </section>
     <!------------------------------SECTION COMMANDER-------------------------->
         <section class="commande">
