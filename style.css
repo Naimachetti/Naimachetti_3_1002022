@@ -32,10 +32,10 @@
   -webkit-animation-timing-function: ease-in;
   -moz-animation-timing-function: ease-in;
   -o-animation-timing-function: ease-in;
-  animation-duration: 3s; 
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -o-animation-duration: 3s;
+  animation-duration: 1.5s; 
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
   transform: scale(0.0) rotate(360deg);
   -webkit-transform: scale(0.0) rotate(360deg);
   -moz-transform: scale(0.0) rotate(360deg);
@@ -63,10 +63,10 @@
   -webkit-animation-timing-function: ease-in;
   -moz-animation-timing-function: ease-in;
   -o-animation-timing-function: ease-in;
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -o-animation-duration: 3s;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
   transform: scale(0.0) rotate(360deg);
   -webkit-transform: scale(0.0) rotate(360deg);
   -moz-transform: scale(0.0) rotate(360deg);
@@ -94,29 +94,27 @@
   -webkit-animation-timing-function: ease-in;
   -moz-animation-timing-function: ease-in;
   -o-animation-timing-function: ease-in;
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -o-animation-duration: 3s;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
   transform: scale(0.0) rotate(360deg);
   -webkit-transform: scale(0.0) rotate(360deg);
   -moz-transform: scale(0.0) rotate(360deg);
   -o-transform: scale(0.0) rotate(360deg);
 }
 
-  .conteneur_chargement .chargement{
+  .chargement{
     font-size: 2.8em;
     margin-top: 5em;
-    margin-left: 0.5em;
+    left: 1em;
     position:absolute;
     text-align: center;
-    left: 1em; 
     display: flex;
     flex-direction: row;
     z-index: 1;
     
     }
-  
 
 @-webkit-keyframes fondu {
 0% {
@@ -169,7 +167,7 @@ transform: scale(0.0);
 }
 
 
-/*---------ANIMATION MENU------------*/
+/*---------ANIMATION DES 4 MENUS------------*/
 
 .anim, #conteneur_menus
 {
@@ -313,11 +311,10 @@ body {
 }
 
 .bloc_main
-{  -webkit-animation: fondumain 3s;
-  animation: fondumain 3s;
-  animation-delay: 0s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+{  -webkit-animation: fondumain;
+  animation: fondumain;
+  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -325,23 +322,15 @@ body {
 }
 @keyframes fondumain {
   0% {
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
   opacity: 0;
 }
 100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
   opacity: 1;
 }
 0% {
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
   opacity: 0;
 }
 100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
   opacity: 1;
 }
   
@@ -389,10 +378,8 @@ header {
   font-weight: 100;
   font-size: 1.1em
 }
-
-.presentation input
-
 /*BOUTON EXPLORER NOS RESTAURANT*/
+.presentation input
   {
   margin-top: 2em;
   border-radius: 2em;
@@ -538,7 +525,7 @@ header {
 
 .texte_droite {
   position: absolute;
-  top: 55.2em;
+  top: 55em;
   right: 1.6em;
   background-color: #99e2d0;
   color: #0c6b50;
@@ -549,7 +536,7 @@ header {
 
 .texte_droite-1 {
   position: absolute;
-  top: 70.5em;
+  top: 70.3em;
   right: 1.5em;
   background-color: #99e2d0;
   color: #0c6b50;
@@ -597,8 +584,9 @@ footer a {
 /*-----------------------------CSS 4 MENUS---------------------------------*/
 header i {
   position: absolute;
-  right: 22em;
-  top: 2.2em;
+  right: 20.5em;
+  margin-top: 0.5em;
+  color: #000;
 }
 
 .titre_menu h2 {
@@ -610,6 +598,15 @@ header i {
 .header_image img {
   width: 100%;
   height: 16em;
+}
+
+#conteneur_menus {
+  position: sticky;
+  background-color: #f6f6f6;
+  border-radius: 2em 2em 0em 0em;
+  margin-top: -4em;
+  padding: 0em 1em;
+  z-index: 1;
 }
 
 .entete_menus {
@@ -644,14 +641,6 @@ header i {
   transition: all 1s;
 }
 
-#conteneur_menus {
-  position: sticky;
-  background-color: #f6f6f6;
-  border-radius: 2em 2em 0em 0em;
-  margin-top: -4em;
-  padding: 0em 1em;
-}
-
 .cartes_entrees,
 .cartes_plats,
 .cartes_desserts {
@@ -666,6 +655,78 @@ header i {
   width: 10%;
   border-bottom: solid #99e2d0;
   margin-bottom: 1em;
+}
+
+.entree_menu,
+.plat_menu,
+.dessert_menu {
+  border-radius: 1em;
+  box-shadow: 0.1em 0.5em 1em #d4d4d4;
+  margin-bottom: 0.8em;
+  background-color: white;
+  height: 4em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.input_menu {
+  appearance: none;
+} 
+
+/*label*/
+.menu-general {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.entree_description_tarif,
+.plat_description_tarif,
+.dessert_description_tarif {
+  width: 100%;
+}
+
+.entree_description_tarif .entree_description,
+.plat_description_tarif .plat_description,
+.dessert_description_tarif .dessert_description {
+  width: 66%;
+  margin: 0.5em;
+  float: left;
+  z-index: 1;
+  display: block;
+}
+.entree_description .texte2,
+.plat_description .texte2,
+.dessert_description .texte2 {
+  margin: 0em;
+  font-size: 0.84em;
+  font-weight: 100;
+}
+
+
+.entree_description .texte1,
+.plat_description .texte1,
+.dessert_description .texte1
+{
+  font-weight: 500;
+}
+
+.entree_description .texte1,
+.entree_description .texte2,
+.plat_description .texte1,
+.plat_description .texte2,
+.dessert_description .texte1,
+.dessert_description .texte2 {
+  overflow: hidden;
+  text-overflow: ellipsis;/*--les 3 petits points--*/
+  white-space: nowrap;
+  text-align: start;
+  display: block;
+  font-family: 'Roboto';
 }
 
 .commande {
@@ -689,73 +750,9 @@ header i {
   transform: scale(1.05);
 }
 /*-----------------ANIMATION CHOIX MENUS------------------------*/
-.entree_menu,
-.plat_menu,
-.dessert_menu {
-  border-radius: 1em;
-  box-shadow: 0.1em 0.5em 1em #d4d4d4;
-  margin-bottom: 0.8em;
-  background-color: white;
-  height: 4em;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-}
-  
-/*label*/
-.menu-general {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 
-.entree_description_tarif,
-.plat_description_tarif,
-.dessert_description_tarif {
-  width: 100%;
-}
-
-.entree_description_tarif .entree_description,
-.plat_description_tarif .plat_description,
-.dessert_description_tarif .dessert_description {
-  width: 66%;
-  margin: 0.5em;
-  float: left;
-  z-index: 1;
-  display: block;
-}
-
-.input_menu {
-  appearance: none;
-}
-
-.entree_description .texte1,
-.entree_description .texte2,
-.plat_description .texte1,
-.plat_description .texte2,
-.dessert_description .texte1,
-.dessert_description .texte2 {
-  overflow: hidden;
-  text-overflow: ellipsis;/*--les 3 petits points--*/
-  white-space: nowrap;
-  text-align: start;
-  display: block;
-  font-family: Roboto, Arial, "Courier New", Verdana;
-}
-
-.entree_description .texte2,
-.plat_description .texte2,
-.dessert_description .texte2 {
-  margin: 0em;
-  font-size: 0.84em;
-}
-
-.entree_description_tarif .tarif,
-.plat_description_tarif .tarif,
-.dessert_description_tarif .tarif {
-  font-family: Roboto, Arial, "Courier New", Verdana;
+.tarif {
+  font-family: 'Roboto';
   font-size: 0.8em;
   font-weight: bold;
   margin-top: 1.5em;
@@ -771,6 +768,17 @@ header i {
   -moz-transition: 0.5s -mos- transform;
   -ms-transition: 0.5s -ms- transform;
   -o-transition: 0.5s -o- transform;
+}
+
+.validation {
+  right: 0em;
+  background-color: #99E2D0;
+  border-radius: 0 1em 1em 0;
+  height: 4em;
+  width: 5.5em;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+  display: none;
 }
 
 .input_menu:checked+label .validation{
@@ -796,17 +804,16 @@ header i {
   }
 }
 
-.validation {
-  right: 0em;
-  background-color: #99E2D0;
-  border-radius: 0 1em 1em 0;
-  height: 4em;
-  width: 5.5em;
-  transform: scaleX(0);
-  transition: transform 0.5s;
+.validation .fa-check-circle {
+  color: white;
+  font-size: 1.5em;
+  z-index: 1;
+  margin-top: 0.8em;
+  padding-left: 0.8em;
   display: none;
+  appearance: none;
+  
 }
-
 
 .input_menu:checked+label .fa-check-circle {
   display: block;
@@ -817,15 +824,6 @@ header i {
   -moz-transition: 0.5s -mos- transform;
   -ms-transition: 0.5s -ms- transform;
   -o-transition: 0.5s -o- transform;
-}
-
-.validation .fa-check-circle {
-  color: white;
-  font-size: 1.5em;
-  z-index: 1;
-  margin-top: 0.8em;
-  padding-left: 0.8em;
-  display: none;
 }
 
 @keyframes rotation_check-cercle {
@@ -838,32 +836,72 @@ header i {
   }
 }
 
-.input_menu:checked+label .fa-check-circle {
-  display: block;
-  animation: rotation_check-cercle 0.5s;
-  transform-origin: center;
-  transition: transform 0.5s ease-in;
-  -webkit-transition: 0.5s -webkit- transform;
-  -moz-transition: 0.5s -mos- transform;
-  -ms-transition: 0.5s -ms- transform;
-  -o-transition: 0.5s -o- transform;
-}
-.menu-general:hover
-{
-cursor: pointer;
-}
 /*-----------------------------MEDIA QUERIES--------------------------*/
+@media screen and (min-width: 320px) and (max-width: 374px)
+
+{
+  /*-------ACCUEIL------*/
+  .conteneur_chargement .chargement
+ {
+   margin-left: -0.4em;
+   margin-top: 5em;
+ }
+
+  .restaurant i 
+  {
+    margin-left: 11em;
+  }
+
+/*-------LES 4 MENUS-------*/
+  header i 
+  {
+    right: 17em;
+  }
+
+  .entete_menus i
+  {
+    margin-left: 11em;
+  }
+
+  .tarif
+  {
+    margin-left: 6em;
+  }
+  
+  .entree_menu .menu-general
+  {
+    width: 100%;
+  }
+ .entree_description_tarif,
+ .plat_description_tarif,
+ .dessert_description_tarif
+  {
+    width: 77%;
+  }
+ 
+  .validation
+  {
+    width: 23%;
+  }
+}
+
 @media screen and (min-width: 376px) and (max-width: 834px)/*----ipod pro 11-inch--*/
  /*------ACCUEIL------*/
 {
+  header
+  {
+    margin-top: 2.5em;
+  }
+
   #conteneur_menus
   {
     padding: 1em;
    }
+
 .restaurant i 
- {
-   margin-left: 33em;
- }
+  {
+    margin-left: 33em;
+  }
 
  .conteneur_chargement .chargement
  {
@@ -874,39 +912,40 @@ cursor: pointer;
 
  .texte_droite
  {
-  top: 51em ;
+  top: 53.5em ;
  }
 
  .texte_droite-1
  {
-   top: 66.3em;
+   top: 68.7em;
  }
 
  /*-----LES MENUS--------*/
  header i 
  {
-   right: 48em;
-   top: 6em;
+   right: 42em;
+   top: 3em;
  }
+
  .entete_menus i
  {
    margin-left: 33em;
  }
- .entree_menu .tarif,
- .plat_menu .tarif,
- .dessert_menu .tarif
+
+ .tarif
  {
-   margin-left: 16em;
+   margin-left: 15em;
  }
  
  .validation .fa-check-circle
  {
    padding-left: 1.1em;
  }
+
  .commande
  {
-   width: 91%;
-   margin-left: 1em;
+   width: 40%;
+   margin-left: 11em;
  }
 }
 
@@ -925,21 +964,26 @@ cursor: pointer;
  }
   .texte_droite
   {
-    top: 52em;
+    top: 54em;
   }
   .texte_droite-1
   {
-    top: 67.3em;
+    top: 69.3em;
   }
   .restaurant i 
   {
     margin-left: 41em;
   }
   /*--------LES MENUS-------*/
+  header 
+  {
+    margin-top: 3em;
+  }
+
   header i 
   {
-    right: 59em;
-    top: 7em;
+    right: 49em;
+    top: 3em;
   }
   .entete_menus i 
   {
@@ -965,8 +1009,8 @@ cursor: pointer;
   }
   .commande
   {
-    width: 94%;
-    margin-left: 0.4em;
+    width: 36%;
+    margin-left: 16.4em;
   }
   .chargement
   {
@@ -1030,12 +1074,12 @@ cursor: pointer;
   }
   .texte_droite
   {
-    top: 41em;
+    top: 44.5em;
     right: 5em;
   }
   .texte_droite-1
   {
-    top: 56.5em;
+    top: 60em;
     right: 5em;
   }
   .icone 
@@ -1050,11 +1094,11 @@ cursor: pointer;
   {
     margin-left: 4em;
   }
-  /*---------menu--------*/
+  /*---------LES 4 MENUS--------*/
   header i
   {
-    right: 73em;
-    top: 5.9em;
+    right: 56em;
+    top: 5em;
   }
   .header_image img 
   {
@@ -1232,7 +1276,7 @@ cursor: pointer;
   }
   .texte_droite-1
   {
-    top: 60.5em;
+    top: 60.4em;
     right: 19em;
   }
   .icone 
@@ -1256,7 +1300,7 @@ cursor: pointer;
   .header_image img 
   {
     width: 109em;
-    height: 47em;
+    height: 34em;
     margin-top: -3em;
     margin-left: 0em;
     border-radius: 0em;
@@ -1269,6 +1313,7 @@ cursor: pointer;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: -12em;
   }
   .entete_menus i 
   {
