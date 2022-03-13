@@ -3,7 +3,7 @@
 
 
 /*tous les éléments*/
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -11,8 +11,7 @@
 /*------------------------- PARTIE ACCUEIL---------------------------*/
 /*-------------------------ANIMATION LOADER (CHARGEMENT PAGE )---------------------------*/
 
-.oh
-{
+.oh {
   color: #9356dc;
   font-family: "shrikhand";
   overflow: hidden;
@@ -21,9 +20,12 @@
   -moz-animation-name: fondu;
   -o-animation-name: fondu;
   animation-delay: 0s;
-  -webkit-animation-delay: 0s;/*pour chrome*/
-  -moz-animation-delay: 0s;/*pour mozilla*/
-  -o-animation-delay: 0s;/*pour opera*/
+  -webkit-animation-delay: 0s;
+  /*pour chrome*/
+  -moz-animation-delay: 0s;
+  /*pour mozilla*/
+  -o-animation-delay: 0s;
+  /*pour opera*/
   animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
   -moz-animation-iteration-count: 1;
@@ -32,7 +34,7 @@
   -webkit-animation-timing-function: ease-in;
   -moz-animation-timing-function: ease-in;
   -o-animation-timing-function: ease-in;
-  animation-duration: 1.5s; 
+  animation-duration: 1.5s;
   -webkit-animation-duration: 1.5s;
   -moz-animation-duration: 1.5s;
   -o-animation-duration: 1.5s;
@@ -42,8 +44,8 @@
   -o-transform: scale(0.0) rotate(360deg);
 
 }
-.my 
-{
+
+.my {
   color: #FF79DA;
   font-family: "shrikhand";
   overflow: hidden;
@@ -71,10 +73,10 @@
   -webkit-transform: scale(0.0) rotate(360deg);
   -moz-transform: scale(0.0) rotate(360deg);
   -o-transform: scale(0.0) rotate(360deg);
-  
+
 }
-.food 
-{
+
+.food {
   color: #99e2d0;
   font-family: "shrikhand";
   overflow: hidden;
@@ -104,205 +106,225 @@
   -o-transform: scale(0.0) rotate(360deg);
 }
 
-  .chargement{
-    font-size: 2.8em;
-    margin-top: 5em;
-    left: 1em;
-    position:absolute;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    z-index: 1;
-    
-    }
+.chargement {
+  font-size: 2.8em;
+  margin-top: 5em;
+  left: 1em;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+
+}
 
 @-webkit-keyframes fondu {
-0% {
+  0% {
 
-transform: scale(0.0) rotate(360deg);
-}
+    transform: scale(0.0) rotate(360deg);
+  }
 
   25% {
 
     transform: scale(1.0);
-    }
-100% {
+  }
 
-transform: scale(0.0);
-}
+  100% {
+
+    transform: scale(0.0);
+  }
 
 }
 
 @-webkit-keyframes fondu1 {
-0% {
+  0% {
 
-transform: scale(0.0) rotate(360deg);
-}
-
-25% {
-
-  transform: scale(1.0);
+    transform: scale(0.0) rotate(360deg);
   }
-100% {
 
-transform: scale(0.0);
+  25% {
+
+    transform: scale(1.0);
+  }
+
+  100% {
+
+    transform: scale(0.0);
+  }
+
 }
 
-}
 @-webkit-keyframes fondu2 {
-0% {
+  0% {
 
-transform: scale(0.0) rotate(360deg);
-}
-
-25% {
-
-  transform: scale(1.0);
+    transform: scale(0.0) rotate(360deg);
   }
-100% {
 
-transform: scale(0.0);
-}
+  25% {
+
+    transform: scale(1.0);
+  }
+
+  100% {
+
+    transform: scale(0.0);
+  }
 
 }
 
 
 /*---------ANIMATION DES 4 MENUS------------*/
 
-.anim, #conteneur_menus
-{
+.anim,
+#conteneur_menus {
   -webkit-animation: disparaite 2s;
   animation: disparaite 2s;
   animation-delay: 0s;
   animation-fill-mode: none;
 }
-.anim--1
-{
--webkit-animation-delay: 0.5s;
-animation-delay: 0.5s;
--webkit-animation-fill-mode: forwards;
-animation-fill-mode: forwards;
-opacity: 0;
+
+.anim--1 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 @keyframes disparaite {
-0% {
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
-  opacity: 0;
-}
-100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
-}
-0% {
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
-  opacity: 0;
-}
-100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
-
-  }
-  
-  }
-  .anim--2
-  {
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
     opacity: 0;
   }
 
-@keyframes disparaite {0% {
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
-  opacity: 0;
-}
-100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
-}
-0% {
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
-  opacity: 0;
-}
-100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
-  
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
   }
-  
+
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+
+  }
+
 }
-.anim--3
-{
+
+.anim--2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes disparaite {
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+
+  }
+
+}
+
+.anim--3 {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   opacity: 0;
 }
+
 @keyframes disparaite {
   0% {
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
-  opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
 }
-100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
-}
-0% {
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
-  opacity: 0;
-}
-100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
-}
-  
-}
-.anim--4
-{
+
+.anim--4 {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   opacity: 0;
 }
+
 @keyframes disparaite {
   0% {
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
-  opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
 }
-100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
-}
-0% {
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
-  opacity: 0;
-}
-100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
-}
-  
-}
+
 /*-----------------------------FIN ANIMATION MENU-----------------------------------*/
 /*-----------------------------CSS ACCUEIL-HTML-------------------------------------*/
 body {
@@ -310,8 +332,8 @@ body {
   font-size: 16px;
 }
 
-.bloc_main
-{  -webkit-animation: fondumain;
+.bloc_main {
+  -webkit-animation: fondumain;
   animation: fondumain;
   animation-delay: 2.5s;
   -webkit-animation-delay: 2.5s;
@@ -320,20 +342,24 @@ body {
   opacity: 0;
   z-index: 2;
 }
+
 @keyframes fondumain {
   0% {
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-}
-0% {
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-}
-  
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
 }
 
 header {
@@ -378,9 +404,9 @@ header {
   font-weight: 100;
   font-size: 1.1em
 }
+
 /*BOUTON EXPLORER NOS RESTAURANT*/
-.presentation input
-  {
+.presentation input {
   margin-top: 2em;
   border-radius: 2em;
   padding: 0.8em 2em;
@@ -404,7 +430,7 @@ header {
 .fonctionnement h2 {
   margin-left: 1em;
   margin-top: 2em;
-  
+
 }
 
 .conteneur_3_boutons {
@@ -439,12 +465,13 @@ header {
   margin-left: 1em;
   font-size: 1.2em;
 }
+
 .fonctionnement .bouton:hover {
   color: #9356dc;
   cursor: pointer;
 }
-.menu_titre
-{
+
+.menu_titre {
   color: #000;
 }
 
@@ -531,7 +558,7 @@ header {
   color: #0c6b50;
   padding: 0.4em 0.8em 0.4em 0.8em;
   border-radius: 5%;
-  
+
 }
 
 .texte_droite-1 {
@@ -673,7 +700,7 @@ header i {
 
 .input_menu {
   appearance: none;
-} 
+}
 
 /*label*/
 .menu-general {
@@ -699,6 +726,7 @@ header i {
   z-index: 1;
   display: block;
 }
+
 .entree_description .texte2,
 .plat_description .texte2,
 .dessert_description .texte2 {
@@ -710,8 +738,7 @@ header i {
 
 .entree_description .texte1,
 .plat_description .texte1,
-.dessert_description .texte1
-{
+.dessert_description .texte1 {
   font-weight: 500;
 }
 
@@ -722,7 +749,8 @@ header i {
 .dessert_description .texte1,
 .dessert_description .texte2 {
   overflow: hidden;
-  text-overflow: ellipsis;/*--les 3 petits points--*/
+  text-overflow: ellipsis;
+  /*--les 3 petits points--*/
   white-space: nowrap;
   text-align: start;
   display: block;
@@ -742,13 +770,13 @@ header i {
   transform: scale(1);
 }
 
-.commande:hover
-{
+.commande:hover {
   opacity: 0.6;
   background-color: #ffffff;
   transition-duration: 1s;
   transform: scale(1.05);
 }
+
 /*-----------------ANIMATION CHOIX MENUS------------------------*/
 
 .tarif {
@@ -781,7 +809,7 @@ header i {
   display: none;
 }
 
-.input_menu:checked+label .validation{
+.input_menu:checked+label .validation {
   display: block;
   animation: animation_input_menu 0.5s forwards;
   transform-origin: right;
@@ -800,7 +828,7 @@ header i {
 
   100% {
     transform: scaleX(1);
-    
+
   }
 }
 
@@ -812,7 +840,7 @@ header i {
   padding-left: 0.8em;
   display: none;
   appearance: none;
-  
+
 }
 
 .input_menu:checked+label .fa-check-circle {
@@ -837,279 +865,258 @@ header i {
 }
 
 /*-----------------------------MEDIA QUERIES--------------------------*/
-@media screen and (min-width: 320px) and (max-width: 374px)
+@media screen and (min-width: 320px) and (max-width: 374px) {
 
-{
   /*-------ACCUEIL------*/
-  .conteneur_chargement .chargement
- {
-   margin-left: -0.4em;
-   margin-top: 5em;
- }
+  .conteneur_chargement .chargement {
+    margin-left: -0.4em;
+    margin-top: 5em;
+  }
 
-  .restaurant i 
-  {
+  .restaurant i {
     margin-left: 11em;
   }
 
-/*-------LES 4 MENUS-------*/
-  header i 
-  {
+  /*-------LES 4 MENUS-------*/
+  header i {
     right: 17em;
   }
 
-  .entete_menus i
-  {
+  .entete_menus i {
     margin-left: 11em;
   }
 
-  .tarif
-  {
+  .tarif {
     margin-left: 6em;
   }
-  
-  .entree_menu .menu-general
-  {
+
+  .entree_menu .menu-general {
     width: 100%;
   }
- .entree_description_tarif,
- .plat_description_tarif,
- .dessert_description_tarif
-  {
+
+  .entree_description_tarif,
+  .plat_description_tarif,
+  .dessert_description_tarif {
     width: 77%;
   }
- 
-  .validation
-  {
+
+  .validation {
     width: 23%;
   }
 }
 
-@media screen and (min-width: 376px) and (max-width: 834px)/*----ipod pro 11-inch--*/
- /*------ACCUEIL------*/
-{
-  header
+@media screen and (min-width: 376px) and (max-width: 834px)
+
+/*----ipod pro 11-inch--*/
+/*------ACCUEIL------*/
   {
+  header {
     margin-top: 2.5em;
   }
 
-  #conteneur_menus
-  {
+  #conteneur_menus {
     padding: 1em;
-   }
+  }
 
-.restaurant i 
-  {
+  .restaurant i {
     margin-left: 33em;
   }
 
- .conteneur_chargement .chargement
- {
-   margin-left: 2em;
-   margin-top: 5em;
-   font-size: 5em;
- }
+  .conteneur_chargement .chargement {
+    margin-left: 2em;
+    margin-top: 5em;
+    font-size: 5em;
+  }
 
- .texte_droite
- {
-  top: 53.5em ;
- }
+  .texte_droite {
+    top: 53.5em;
+  }
 
- .texte_droite-1
- {
-   top: 68.7em;
- }
+  .texte_droite-1 {
+    top: 68.7em;
+  }
 
- /*-----LES MENUS--------*/
- header i 
- {
-   right: 42em;
-   top: 3em;
- }
+  /*-----LES MENUS--------*/
+  header i {
+    right: 42em;
+    top: 3em;
+  }
 
- .entete_menus i
- {
-   margin-left: 33em;
- }
+  .entete_menus i {
+    margin-left: 33em;
+  }
 
- .tarif
- {
-   margin-left: 15em;
- }
- 
- .validation .fa-check-circle
- {
-   padding-left: 1.1em;
- }
+  .tarif {
+    margin-left: 15em;
+  }
 
- .commande
- {
-   width: 40%;
-   margin-left: 11em;
- }
+  .validation .fa-check-circle {
+    padding-left: 1.1em;
+  }
+
+  .commande {
+    width: 40%;
+    margin-left: 11em;
+  }
 }
 
-@media screen and (min-width: 835px) and (max-width: 1279px)/*----ipod pro 12.9-inch--*/
+@media screen and (min-width: 835px) and (max-width: 1279px)
+/*----ipod pro 12.9-inch--*/
 
-{/*------ACCUEIL-----*/
-  #conteneur_menus
- {
-  padding: 1em;
- }
-  .conteneur_chargement .chargement
- {
-   margin-left: 2em;
-   margin-top: 5em;
-   font-size: 5em;
- }
-  .texte_droite
   {
+
+  /*------ACCUEIL-----*/
+  #conteneur_menus {
+    padding: 1em;
+  }
+
+  .conteneur_chargement .chargement {
+    margin-left: 2em;
+    margin-top: 5em;
+    font-size: 5em;
+  }
+
+  .texte_droite {
     top: 54em;
   }
-  .texte_droite-1
-  {
+
+  .texte_droite-1 {
     top: 69.3em;
   }
-  .restaurant i 
-  {
+
+  .restaurant i {
     margin-left: 41em;
   }
+
   /*--------LES MENUS-------*/
-  header 
-  {
+  header {
     margin-top: 3em;
   }
 
-  header i 
-  {
+  header i {
     right: 49em;
     top: 3em;
   }
-  .entete_menus i 
-  {
+
+  .entete_menus i {
     margin-left: 42em;
   }
+
   .entree_description_tarif,
   .plat_description_tarif,
-  .dessert_description_tarif
-  {
+  .dessert_description_tarif {
     width: 101%;
   }
 
   .entree_menu .tarif,
   .plat_menu .tarif,
-  .dessert_menu .tarif
-  {
+  .dessert_menu .tarif {
     margin-left: 21em;
   }
 
-  .validation .fa-check-circle
-  {
+  .validation .fa-check-circle {
     padding-left: 1.2em;
   }
-  .commande
-  {
+
+  .commande {
     width: 36%;
     margin-left: 16.4em;
   }
-  .chargement
-  {
+
+  .chargement {
     margin-left: 3em;
     margin-top: -2.5em;
     font-size: 5em;
   }
- 
+
 }
+
 @media screen and (min-width: 1280px) and (max-width: 1600px)
 
-  /*--------ACCUEIL---------*/
-{
-  .conteneur_chargement .chargement
+/*--------ACCUEIL---------*/
   {
+  .conteneur_chargement .chargement {
     margin-top: 7em;
     margin-left: 5em;
   }
 
-  .oh
-  {
+  .oh {
     font-size: 3em;
   }
 
-  .my
-  {
+  .my {
     font-size: 3em;
   }
 
-  .food
-  {
+  .food {
     font-size: 3em;
   }
 
-  header 
-  {
+  header {
     margin-top: 5em;
   }
-  .fonctionnement h2, .conteneur_titre h2
-  {
+
+  .fonctionnement h2,
+  .conteneur_titre h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .conteneur_3_boutons
-  {
+
+  .conteneur_3_boutons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 77em;
     margin-left: 1em;
   }
-  .bloc_cartes
-  {
+
+  .bloc_cartes {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .restaurant
-  {
+
+  .restaurant {
     width: 34em;
     margin-left: 2em;
   }
-  .texte_droite
-  {
+
+  .texte_droite {
     top: 44.5em;
     right: 5em;
   }
-  .texte_droite-1
-  {
+
+  .texte_droite-1 {
     top: 60em;
     right: 5em;
   }
-  .icone 
-  {
+
+  .icone {
     margin-left: 12em;
   }
-  footer 
-  {
+
+  footer {
     margin-left: 0em;
   }
-  .section_footer
-  {
+
+  .section_footer {
     margin-left: 4em;
   }
+
   /*---------LES 4 MENUS--------*/
-  header i
-  {
+  header i {
     right: 56em;
     top: 5em;
   }
-  .header_image img 
-  {
+
+  .header_image img {
     width: 99em;
     height: 39em;
     margin-top: -3em;
     margin-left: 0em;
     border-radius: 0em;
   }
-  #conteneur_menus
-  {
+
+  #conteneur_menus {
     width: 92%;
     margin-left: 2.5em;
     padding: 1em;
@@ -1117,27 +1124,24 @@ header i {
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  .entete_menus i 
-  {
+
+  .entete_menus i {
     margin-left: 50em;
   }
-  
-  .cartes_entrees
-  {
+
+  .cartes_entrees {
     margin-left: -15em;
     padding-top: 2em;
     width: 28%;
   }
 
-  .cartes_plats
-  {
+  .cartes_plats {
     margin-left: 6em;
     padding-top: 2em;
     width: 29%;
   }
-  
-  .cartes_desserts
-  {
+
+  .cartes_desserts {
     margin-left: 5em;
     padding-top: 2em;
     width: 28%;
@@ -1145,168 +1149,158 @@ header i {
 
   .entree_menu .tarif,
   .plat_menu .tarif,
-  .dessert_menu .tarif
-  {
+  .dessert_menu .tarif {
     margin-left: 3em;
   }
 
-  .commande
-  {
+  .commande {
     width: 51%;
     margin-left: 3em;
   }
 
 }
-@media screen and (min-width: 1600px) and (max-width: 1919px)
-{
-/*------ACCUEIL-----*/
-  .conteneur_chargement .chargement
-  {
+
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+
+  /*------ACCUEIL-----*/
+  .conteneur_chargement .chargement {
     margin-left: 10em;
   }
-  .conteneur_3_boutons
-  {
+
+  .conteneur_3_boutons {
     margin-left: 7em;
     width: 89%;
   }
 
-  .entete_menus i
-  {
+  .entete_menus i {
     margin-left: 60em;
   }
 
-  .bloc_cartes
-  {
+  .bloc_cartes {
     margin-left: 8em;
   }
 
-  .texte_droite, .texte_droite-1
-  {
+  .texte_droite,
+  .texte_droite-1 {
     right: 9em;
   }
 
-  .commande
-  {
+  .commande {
     width: 25%;
   }
 
   /*-------MENU--------*/
-  .cartes_entrees
-  {
+  .cartes_entrees {
     width: 24%;
   }
 
-  .cartes_plats, .cartes_desserts
-  {
+  .cartes_plats,
+  .cartes_desserts {
     width: 24%;
     margin-left: 3em;
   }
 }
 
-@media screen and (min-width: 1920px) and (max-width: 3840px)
-{
- 
- /*--------ACCUEIL---------*/
- .conteneur_chargement .chargement
- {
-   margin-top: 7em;
-   margin-left: 10em;
- }
+@media screen and (min-width: 1920px) and (max-width: 3840px) {
 
- .oh,.my,.food
- {
-   font-size: 3em;
- }
-  header img 
-  {
+  /*--------ACCUEIL---------*/
+  .conteneur_chargement .chargement {
+    margin-top: 7em;
+    margin-left: 10em;
+  }
+
+  .oh,
+  .my,
+  .food {
+    font-size: 3em;
+  }
+
+  header img {
     width: 20%;
   }
-  .conteneur_localisation
-  {
+
+  .conteneur_localisation {
     width: 80%;
     margin-left: 11em;
     background: none;
   }
 
-  header 
-  {
+  header {
     margin-top: 5em;
   }
-  .fonctionnement h2
-  {
+
+  .fonctionnement h2 {
     margin-top: 0em;
   }
 
-  .fonctionnement h2, .conteneur_titre h2
-  {
+  .fonctionnement h2,
+  .conteneur_titre h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .conteneur_3_boutons
-  {
+
+  .conteneur_3_boutons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 85em;
     margin-left: 18.5em;
   }
 
-  .conteneur_cartes
-  {
+  .conteneur_cartes {
     width: 72%;
     margin-left: 18em;
     border-radius: 1em 1em 0em 0em;
   }
-  
-  .bloc_cartes
-  {
+
+  .bloc_cartes {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 3em;
   }
-  .restaurant
-  {
+
+  .restaurant {
     width: 34em;
     margin-left: 2em;
   }
-  .texte_droite
-  {
+
+  .texte_droite {
     top: 45em;
     right: 19em;
   }
-  .texte_droite-1
-  {
+
+  .texte_droite-1 {
     top: 60.4em;
     right: 19em;
   }
-  .icone 
-  {
+
+  .icone {
     margin-left: 12em;
   }
-  footer 
-  {
+
+  footer {
     margin-left: 0em;
   }
-  .section_footer
-  {
+
+  .section_footer {
     margin-left: 4em;
   }
+
   /*---------menu--------*/
-  header i
-  {
+  header i {
     right: 73em;
     top: 5.9em;
   }
-  .header_image img 
-  {
+
+  .header_image img {
     width: 109em;
     height: 34em;
     margin-top: -3em;
     margin-left: 0em;
     border-radius: 0em;
   }
-  #conteneur_menus
-  {
+
+  #conteneur_menus {
     width: 78%;
     margin-left: 11em;
     padding: 1em;
@@ -1315,27 +1309,24 @@ header i {
     flex-wrap: wrap;
     margin-top: -12em;
   }
-  .entete_menus i 
-  {
+
+  .entete_menus i {
     margin-left: 64em;
   }
-  
-  .cartes_entrees
-  {
+
+  .cartes_entrees {
     margin-left: -12em;
     padding-top: 2em;
     width: 28%;
   }
 
-  .cartes_plats
-  {
+  .cartes_plats {
     margin-left: 6em;
     padding-top: 2em;
     width: 29%;
   }
-  
-  .cartes_desserts
-  {
+
+  .cartes_desserts {
     margin-left: 5em;
     padding-top: 2em;
     width: 28%;
@@ -1343,24 +1334,20 @@ header i {
 
   .entree_menu .tarif,
   .plat_menu .tarif,
-  .dessert_menu .tarif
-  {
+  .dessert_menu .tarif {
     margin-left: 3em;
   }
 
-  .commande
-  {
+  .commande {
     width: 23%;
     margin-left: 3em;
   }
 
-  footer 
-  {
+  footer {
     margin-left: 9em;
   }
 
-  .section_footer
-  {}
+  .section_footer {}
 
 
 }
