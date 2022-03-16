@@ -174,9 +174,9 @@
 
 
 /*---------ANIMATION DES 4 MENUS------------*/
-
-.anim,
-#conteneur_menus {
+.entree_menu,
+.plat_menu,
+.dessert_menu {
   animation: disparaitre 2s;
   -webkit-animation: disparaitre 2s;
   -moz-animation: disparaitre 2s;
@@ -189,88 +189,31 @@
   -webkit-animation-fill-mode: none;
 }
 
-.anim--1 {
+.carte_menu-1 {
   animation-delay: 0.5s;
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
   -o-animation-delay: 0.5s;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode:forwards;
-  -o-animation-fill-mode:forwards;
-
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
   opacity: 0;
 }
 
-@keyframes disparaitre {
-  0% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  0% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-
-  }
-
-}
-
-.anim--2 {
+.carte_menu--2 {
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   -o-animation-delay: 1s;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode:forwards;
-  -o-animation-fill-mode:forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
   opacity: 0;
 }
 
-@keyframes disparaitre {
-  0% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  0% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-
-  }
-
-}
-
-.anim--3 {
+.carte_menu--3 {
   animation-delay: 1.5s;
   -webkit-animation-delay: 1.5s;
   -moz-animation-delay: 1.5s;
@@ -282,34 +225,7 @@
   opacity: 0;
 }
 
-@keyframes disparaitre {
-  0% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  0% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-}
-
-.anim--4 {
+.carte_menu--4 {
   animation-delay: 2s;
   -webkit-animation-delay: 2s;
   -moz-animation-delay: 2s;
@@ -323,29 +239,94 @@
 
 @keyframes disparaitre {
   0% {
-    -webkit-transform: translateY(20px);
+
     transform: translateY(20px);
     opacity: 0;
   }
 
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
   }
 
   0% {
-    -webkit-transform: translateY(20px);
     transform: translateY(20px);
     opacity: 0;
   }
 
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
   }
+}
 
+@-webkit-keyframes disparaitre {
+  0% {
+
+    -webkit-transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes disparaitre {
+  0% {
+
+    -moz-transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    -moz-transform: translateY(0);
+    opacity: 1;
+  }
+
+  0% {
+    -moz-transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    -moz-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes disparaitre {
+  0% {
+
+    -o-transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+
+  0% {
+    -o-transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*-----------------------------FIN ANIMATION MENU-----------------------------------*/
@@ -356,8 +337,8 @@ body {
 }
 
 .bloc_main {
-  -webkit-animation: fondumain;
-  animation: fondumain;
+  -webkit-animation: fondumain 1s;
+  animation: fondumain 1s;
   animation-delay: 2.5s;
   -webkit-animation-delay: 2.5s;
   -webkit-animation-fill-mode: forwards;
@@ -453,7 +434,6 @@ header {
 .fonctionnement h2 {
   margin-left: 1em;
   margin-top: 2em;
-
 }
 
 .conteneur_3_boutons {
@@ -538,7 +518,6 @@ header {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-
 
 .conteneur_cartes {
   background: #f6f6f6;
@@ -683,12 +662,19 @@ header i {
   color: #fff;
   font-weight: 600;
   transform: scale(1.2);
-  -webkit-background-clip: text;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
   /*recadrer le coeur*/
-  -webkit-text-fill-color: transparent;
+  /* la zone d'arrière-plan s'étend dans le texte.*/
+  -webkit-background-clip: text;
   /*coeur transparent*/
-  -webkit-transition: all 1s;
+  -webkit-text-fill-color: transparent;
+  /*pour Microsoft (internet explorer)*/
+  -ms-text-fill-color: transparent;
   transition: all 1s;
+
+
 }
 
 .cartes_entrees,
@@ -791,6 +777,9 @@ header i {
   color: #fff;
   font-size: 1.2em;
   transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
 }
 
 .commande:hover {
@@ -798,9 +787,13 @@ header i {
   background-color: #ffffff;
   transition-duration: 1s;
   transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+
 }
 
-/*-----------------ANIMATION CHOIX MENUS------------------------*/
+/*-----------------ANIMATION VALIDATION MENUS------------------------*/
 
 .tarif {
   font-family: 'Roboto';
@@ -810,6 +803,7 @@ header i {
   margin-left: 4.5em;
   position: absolute;
 }
+
 /*--pour que le tarif se pousse vers l'avant apès avoir cliquer sur validation*/
 .tarif {
   transform: translate(-2em);
@@ -824,24 +818,70 @@ header i {
   height: 4em;
   width: 5.5em;
   transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -o-transform: scaleX(0);
   display: none;
 }
 
 .input_menu:checked+label .validation {
   display: block;
   animation: animation_input_menu 0.5s forwards;
+  -webkit-animation: animation_input_menu 0.5s forwards;
+  -moz-animation: animation_input_menu 0.5s forwards;
+  -o-animation: animation_input_menu 0.5s forwards;
   transform-origin: right;
+  -webkit-transform-origin: right;
+  -moz-transform-origin: right;
+  -o-transform-origin: right;
+
   cursor: pointer;
 }
 
 @keyframes animation_input_menu {
   0% {
-  
+
     transform: scaleX(0);
   }
 
   100% {
     transform: scaleX(1);
+
+  }
+}
+
+@-webkit-keyframes animation_input_menu {
+  0% {
+
+    -webkit-transform: scaleX(0);
+  }
+
+  100% {
+    -webkit-transform: scaleX(1);
+
+  }
+}
+
+@-moz-keyframes animation_input_menu {
+  0% {
+
+    -moz-transform: scaleX(0);
+  }
+
+  100% {
+    -moz-transform: scaleX(1);
+
+  }
+}
+
+@-o-keyframes animation_input_menu {
+  0% {
+
+    -o-transform: scaleX(0);
+  }
+
+  100% {
+    -o-transform: scaleX(1);
 
   }
 }
@@ -853,7 +893,13 @@ header i {
   margin-top: 0.8em;
   padding-left: 0.8em;
   animation: rotation_check-cercle 0.5s;
+  -webkit-animation: rotation_check-cercle 0.5s;
+  -moz-animation: rotation_check-cercle 0.5s;
+  -o-animation: rotation_check-cercle 0.5s;
   transform-origin: center;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -o-transform-origin: center;
 }
 
 @keyframes rotation_check-cercle {
@@ -865,6 +911,37 @@ header i {
     transform: translate(0em) rotate(0deg);
   }
 }
+
+@-webkit-keyframes rotation_check-cercle {
+  0% {
+    -webkit-transform: translate(0.5em) rotate(360deg);
+  }
+
+  100% {
+    -webkit-transform: translate(0em) rotate(0deg);
+  }
+}
+
+@-moz-keyframes rotation_check-cercle {
+  0% {
+    -webkit-transform: translate(0.5em) rotate(360deg);
+  }
+
+  100% {
+    -webkit-transform: translate(0em) rotate(0deg);
+  }
+}
+
+@-o-keyframes rotation_check-cercle {
+  0% {
+    -webkit-transform: translate(0.5em) rotate(360deg);
+  }
+
+  100% {
+    -webkit-transform: translate(0em) rotate(0deg);
+  }
+}
+
 
 /*-----------------------------MEDIA QUERIES--------------------------*/
 @media screen and (min-width: 320px) and (max-width: 374px) {
@@ -909,7 +986,6 @@ header i {
 
 @media screen and (min-width: 376px) and (max-width: 834px)
 
-/*----ipod pro 11-inch--*/
 /*------ACCUEIL------*/
   {
   header {
@@ -962,15 +1038,15 @@ header i {
   }
 }
 
-@media screen and (min-width: 835px) and (max-width: 1279px)
-/*----ipod pro 12.9-inch--*/
-  {
-    /*---loader---*/
-    .chargement {
-      margin-left: 3em;
-      margin-top: -2.5em;
-      font-size: 5em;
-    }
+@media screen and (min-width: 835px) and (max-width: 1279px) {
+
+  /*---loader---*/
+  .chargement {
+    margin-left: 3em;
+    margin-top: -2.5em;
+    font-size: 5em;
+  }
+
   /*------ACCUEIL-----*/
   #conteneur_menus {
     padding: 1em;
@@ -1029,11 +1105,10 @@ header i {
     margin-left: 16.4em;
   }
 
-  
-
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1599px)
+
 /*--------ACCUEIL---------*/
   {
   .conteneur_chargement .chargement {
@@ -1137,7 +1212,6 @@ header i {
   }
 
   .cartes_plats {
-  /*  margin-left: 6em;*/
     padding-top: 2em;
     width: 29%;
   }
@@ -1161,150 +1235,165 @@ header i {
 
 }
 
-@media screen and (min-width: 1600px) and (max-width: 1919px) 
-{
-    /*--------ACCUEIL---------*/
-    .conteneur_chargement .chargement {
-      margin-top: 7em;
-      margin-left: 10em;
-    }
-  
-    .oh,
-    .my,
-    .food {
-      font-size: 3em;
-    }
-  
-    header img {
-      width: 20%;
-    }
-  
-    .conteneur_localisation {
-      width: 80%;
-      margin-left: 11em;
-      background: none;
-    }
-  
-    header {
-      margin-top: 5em;
-    }
-  
-    .fonctionnement h2 {
-      margin-top: 0em;
-    }
-  
-    .fonctionnement h2,
-    .conteneur_titre h2 {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
-  
-    .conteneur_3_boutons {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      width: 85em;
-      margin-left: 6.5em;
-    }
-  
-    .conteneur_cartes {
-      width: 74%;
-      margin-left: 13em;
-      border-radius: 1em 1em 0em 0em;
-    }
-  
-    .bloc_cartes {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-left: -1.5em;
-    }
-  
-    .restaurant {
-      width: 34em;
-      margin-left: 2em;
-    }
-  
-    .texte_droite {
-      top: 43.5em;
-      right: 13em;
-    }
-  
-    .texte_droite-1 {
-      top: 59em;
-      right: 13em;
-    }
-  
-    .icone {
-      margin-left: 12em;
-    }
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
 
-    .section_footer {
-      margin-left: 4em;
-    }
-  
-    /*---------menu--------*/
-    header i {
-      right: 73em;
-      top: 5.9em;
-    }
-  
-    .header_image img {
-      height: 34em;
-      margin-top: -3em;
-      margin-left: 0em;
-      border-radius: 0em;
-    }
-  
-    #conteneur_menus {
-      width: 96%;
-      margin-left: 1em;
-      padding: 1em;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      margin-top: -12em;
-    }
-  
-    .entete_menus i {
-      margin-left: 64em;
-    }
-  
-    .cartes_entrees {
-      margin-left: -12em;
-      padding-top: 2em;
-      width: 28%;
-    }
-  
-    .cartes_plats {
-      margin-left: 6em;
-      padding-top: 2em;
-      width: 29%;
-    }
-  
-    .cartes_desserts {
-      margin-left: 5em;
-      padding-top: 2em;
-      width: 28%;
-    }
-  
-    .entree_menu .tarif,
-    .plat_menu .tarif,
-    .dessert_menu .tarif {
-      margin-left: 8em;
-    }
-  
-    .commande {
-      width: 7%;
-      margin-left: 3em;
-      height: 40%;
-      margin-top: 2em;
-    }
-  
-    
-  
-  
+  /*--------ACCUEIL---------*/
+  .conteneur_chargement .chargement {
+    margin-top: 7em;
+    margin-left: 10em;
   }
-  
+
+  .oh,
+  .my,
+  .food {
+    font-size: 3em;
+  }
+
+  header img {
+    width: 20%;
+  }
+
+  .conteneur_localisation {
+    width: 80%;
+    margin-left: 11em;
+    background: none;
+  }
+
+  header {
+    margin-top: 2em;
+  }
+
+  .fonctionnement h2 {
+    margin-top: 0em;
+  }
+
+  .fonctionnement h2,
+  .conteneur_titre h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .conteneur_3_boutons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 85em;
+    margin-left: 6.5em;
+  }
+
+  .conteneur_cartes {
+    width: 74%;
+    margin-left: 13em;
+    border-radius: 1em 1em 0em 0em;
+  }
+
+  .bloc_cartes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: -1.5em;
+  }
+
+  .restaurant {
+    width: 34em;
+    margin-left: 2em;
+  }
+
+  .texte_droite {
+    top: 41em;
+    right: 13em;
+  }
+
+  .texte_droite-1 {
+    top: 56.5em;
+    right: 13em;
+  }
+
+  .icone {
+    margin-left: 12em;
+  }
+
+  footer h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  .section_footer {
+    margin-left: 4em;
+  }
+
+  .bloc_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+
+  .hands-helping {
+    margin-left: 1em;
+  }
+
+  /*---------LES 4 MENUS--------*/
+  header i {
+    right: 73em;
+    top: 2.9em;
+  }
+
+  .header_image img {
+    height: 54em;
+    margin-top: -3em;
+    margin-left: 0em;
+    border-radius: 0em;
+    object-fit: cover;
+  }
+
+  #conteneur_menus {
+    width: 97%;
+    margin-left: 1em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: -23em;
+  }
+
+  .entete_menus i {
+    margin-left: 64em;
+  }
+
+  .cartes_entrees {
+    margin-left: -12em;
+    padding-top: 2em;
+    width: 28%;
+  }
+
+  .cartes_plats {
+    margin-left: 6em;
+    padding-top: 2em;
+    width: 29%;
+  }
+
+  .cartes_desserts {
+    margin-left: 5em;
+    padding-top: 2em;
+    width: 28%;
+  }
+
+  .entree_menu .tarif,
+  .plat_menu .tarif,
+  .dessert_menu .tarif {
+    margin-left: 8em;
+  }
+
+  .commande {
+    width: 7%;
+    margin-left: 3em;
+    height: 40%;
+    margin-top: 2em;
+  }
+
+}
 
 @media screen and (min-width: 1920px) and (max-width: 3840px) {
 
@@ -1370,12 +1459,12 @@ header i {
   }
 
   .texte_droite {
-    top: 45em;
+    top: 42em;
     right: 21em;
   }
 
   .texte_droite-1 {
-    top: 60.4em;
+    top: 57.4em;
     right: 21em;
   }
 
@@ -1392,18 +1481,41 @@ header i {
     margin-left: 4em;
   }
 
-  /*---------menu--------*/
+  footer h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  .bloc_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+
+  .hands-helping {
+    margin-left: 1em;
+  }
+
+  /*---------LES 4 MENUS--------*/
   header i {
-    right: 73em;
-    top: 5.9em;
+    right: 77em;
+    top: 3.5em;
+  }
+
+  header img {
+    margin-top: -3em;
   }
 
   .header_image img {
     width: 95em;
-    height: 34em;
-    margin-top: -3em;
+    height: 43em;
+    margin-top: -4em;
     margin-left: 11em;
     border-radius: 1em 1em;
+    object-fit: cover;
   }
 
   #conteneur_menus {
@@ -1413,7 +1525,7 @@ header i {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: -14em;
+    margin-top: -16.5em;
   }
 
   .entete_menus i {
@@ -1448,6 +1560,5 @@ header i {
     width: 23%;
     margin-left: 3em;
   }
-
 
 }
