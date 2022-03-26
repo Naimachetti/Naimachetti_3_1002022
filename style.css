@@ -1035,7 +1035,7 @@ header i {
 }
 
 @media screen and (min-width:1060px) and (max-width:1919px) {
-  .conteneur_chargement .chargement {
+ .chargement {
     margin-top: 7em;
     margin-left: 5em;
   }
@@ -1097,7 +1097,7 @@ header i {
   {
 
   .conteneur_chargement .chargement {
-    margin-top: 7em;
+    margin-top: 10em;
     margin-left: 10em;
   }
 
