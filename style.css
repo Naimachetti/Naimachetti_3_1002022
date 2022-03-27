@@ -460,7 +460,6 @@ header {
 .presentation {
   text-align: center;
   margin-top: 1.8em;
-  font-size: 0.9em;
   padding: 0em 0em 4em 0em;
 }
 
@@ -584,7 +583,7 @@ header {
 
 .texte_droite {
   position: absolute;
-  top: 47.5em;
+  top: 50.5em;
   right: 1.6em;
   background-color: #99e2d0;
   color: #0c6b50;
@@ -595,7 +594,7 @@ header {
 
 .texte_droite-1 {
   position: absolute;
-  top: 62.5em;
+  top: 65.5em;
   right: 1.5em;
   background-color: #99e2d0;
   color: #0c6b50;
@@ -1020,12 +1019,12 @@ header i {
   }
 
   .texte_droite {
-    top: 49em;
+    top: 50.5em;
     right: 2em;
   }
 
   .texte_droite-1 {
-    top: 64em;
+    top: 65.5em;
     right: 2em;
   }
 
@@ -1055,12 +1054,12 @@ header i {
   }
 
   .texte_droite {
-    top: 53em;
+    top: 55em;
     right: 8em;
   }
 
   .texte_droite-1 {
-    top: 73em;
+    top: 75em;
     right: 8em;
   }
 
@@ -1157,12 +1156,12 @@ header i {
   }
 
   .texte_droite {
-    top: 36em;
+    top: 37em;
     right: 24em;
   }
 
   .texte_droite-1 {
-    top: 36em;
+    top: 37em;
     right: 63em;
   }
 
