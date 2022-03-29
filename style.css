@@ -432,14 +432,12 @@ header {
 
 .conteneur_localisation {
   background-color: #dfdddd5e;
-  /*padding: -15em 0em 3em 0em;*/
 }
 
 .localisation {
   background-color: #dfdddd5e;
   box-shadow: -1.5px -2.5px 4px 0px #a8a3a3;
   margin-top: -1em;
-  /* font-weight: 500; */
   font-size: 1.2em;
   text-align: center;
 
@@ -452,7 +450,6 @@ header {
 
 .localisation i {
   padding: 10px 10px 10px 0px;
-  /* margin-left: 3em;*/
   font-size: 0.9em;
 }
 
@@ -614,7 +611,6 @@ header {
   position: absolute;
   margin-left: 9em;
   margin-top: -1.5em;
-  /*padding-right: 1em;*/
   font-size: 1.4em;
   cursor: pointer;
 }
@@ -639,7 +635,7 @@ header {
 /*-------------------------FOOTER--------------------------------*/
 footer {
   background-color: #000000C7;
-  padding: 0.2em 0.2em 1.5em;
+  height: 11em;
 }
 
 .section_footer {
@@ -834,7 +830,7 @@ header i {
   font-weight: 600;
 }
 
-/*----------ANIMATION VALIDATION----------------*/
+/*----------ANIMATION BOUTON COMMANDER----------------*/
 .commande {
   display: flex;
   justify-content: center;
@@ -861,6 +857,7 @@ header i {
   -o-transform: scale(1.05);
 }
 
+/*----------ANIMATION VALIDATION----------------*/
 /*--pour que le tarif se pousse vers l'avant apès avoir cliquer sur validation*/
 .tarif {
   transform: translate(-2em);
@@ -1033,8 +1030,30 @@ header i {
   }
 }
 
-@media screen and (min-width:1060px) and (max-width:1919px) {
- .chargement {
+@media screen and (min-width:1024px) and (max-width:1059px) {
+
+  /*--------ACCUEIL---------*/
+  .chargement {
+    margin-top: 7em;
+    margin-left: 5em;
+  }
+
+  .oh,
+  .my,
+  .food {
+    font-size: 2em;
+  }
+
+  .restaurant i {
+    margin-left: 39em;
+  }
+
+}
+
+@media screen and (min-width:1060px) and (max-width:1879px) {
+
+  /*--------ACCUEIL---------*/
+  .chargement {
     margin-top: 7em;
     margin-left: 5em;
   }
@@ -1053,8 +1072,12 @@ header i {
     height: 17em;
   }
 
+  .restaurant i {
+    margin-left: 31em;
+  }
+
   .texte_droite {
-    top: 55em;
+    top: 54em;
     right: 8em;
   }
 
@@ -1090,7 +1113,7 @@ header i {
   }
 }
 
-@media screen and (min-width:1920px) and (max-width:3840px)
+@media screen and (min-width:1880px) and (max-width:1970px)
 
 /*--------ACCUEIL---------*/
   {
@@ -1139,8 +1162,8 @@ header i {
   }
 
   .conteneur_cartes {
-    width: 79.7%;
-    margin-left: 11em;
+    width: 89.5%;
+    margin-left: 5em;
     border-radius: 1em 1em 0em 0em;
   }
 
@@ -1151,28 +1174,34 @@ header i {
   }
 
   .restaurant {
-    width: 34em;
+    width: 45em;
     margin-left: 2em;
+    height: 20em;
+  }
+
+  .restaurant img {
+    height: 15em;
   }
 
   .texte_droite {
     top: 37em;
-    right: 24em;
+    right: 17em;
   }
 
   .texte_droite-1 {
     top: 37em;
-    right: 63em;
+    right: 58em;
   }
 
+  /*le coeur*/
   .icone {
-    margin-left: 12em;
+    margin-left: 20em;
   }
 
   footer {
-    margin-left: 11em;
-    width: 79.4%;
-    height: 13.5em;
+    margin-left: 5em;
+    width: 89.4%;
+    height: 9em;
   }
 
   .section_footer {
@@ -1208,17 +1237,189 @@ header i {
   }
 
   .header_image img {
-    width: 94em;
+    width: 86%;
     height: 43em;
     margin-top: -2em;
-    margin-left: 11em;
+    margin-left: 7em;
     border-radius: 1em 1em;
     object-fit: cover;
   }
 
   #conteneur_menus {
-    width: 78%;
+    width: 87.5%;
+    margin-left: 5em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: -16.5em;
+    border-radius: 5em 5em 0em 0em;
+  }
+
+  .entete_menus i {
+    right: -58em;
+  }
+
+  .titre_menu h2 {
+    font-size: 1.6em;
+  }
+
+  .cartes_entrees {
+    margin-left: -16em;
+    padding-top: 4em;
+    width: 26%;
+  }
+
+  .cartes_plats {
+    margin-left: 6em;
+    padding-top: 4em;
+    width: 29%;
+  }
+
+  .cartes_desserts {
+    margin-left: 5em;
+    padding-top: 4em;
+    width: 28%;
+  }
+
+  .commande {
+    width: 23%;
+    margin-left: 3em;
+  }
+
+}
+
+@media screen and (min-width:1971px) and (max-width:2570px)
+
+/*--------ACCUEIL---------*/
+  {
+
+  .conteneur_chargement .chargement {
+    margin-top: 10em;
+    margin-left: 10em;
+  }
+
+  .oh,
+  .my,
+  .food {
+    font-size: 3em;
+  }
+
+  header img {
+    width: 20%;
+  }
+
+  .conteneur_localisation {
+    width: 80%;
     margin-left: 11em;
+    background: none;
+  }
+
+  header {
+    margin-top: 5em;
+  }
+
+  .fonctionnement h2 {
+    margin-top: 0em;
+  }
+
+  .fonctionnement h2,
+  .conteneur_titre h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .conteneur_3_boutons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 98%;
+  }
+
+  .conteneur_cartes {
+    width: 100%;
+    border-radius: 1em 1em 0em 0em;
+  }
+
+  .bloc_cartes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 3em;
+    width: 95%;
+  }
+
+  .restaurant {
+    width: 56em;
+    margin-left: -1em;
+    height: 23em;
+  }
+
+  .restaurant img {
+    height: 17em;
+  }
+
+  .texte_droite {
+    top: 37em;
+    right: 25em;
+  }
+
+  .texte_droite-1 {
+    top: 37em;
+    right: 94em;
+  }
+
+  /*le coeur*/
+  .icone {
+    margin-left: 20em;
+  }
+
+  footer {
+    width: 100%;
+    height: 9em;
+  }
+
+  .section_footer {
+    margin-left: 4em;
+  }
+
+  footer h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  .bloc_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+
+  .hands-helping {
+    margin-left: 1em;
+  }
+
+  /*---------LES 4 MENUS--------*/
+  header i {
+    right: 77em;
+    top: 3.5em;
+  }
+
+  header img {
+    margin-top: -3em;
+  }
+
+  .header_image img {
+    width: 100%;
+    height: 43em;
+    margin-top: -2em;
+    border-radius: 1em 1em;
+    object-fit: cover;
+  }
+
+  #conteneur_menus {
+    width: 98.4%;
     padding: 1em;
     display: flex;
     justify-content: space-around;
@@ -1231,28 +1432,26 @@ header i {
     right: -53em;
   }
 
+  .titre_menu h2 {
+    font-size: 1.6em;
+  }
+
   .cartes_entrees {
     margin-left: -12em;
-    padding-top: 2em;
+    padding-top: 4em;
     width: 28%;
   }
 
   .cartes_plats {
     margin-left: 6em;
-    padding-top: 2em;
+    padding-top: 4em;
     width: 29%;
   }
 
   .cartes_desserts {
     margin-left: 5em;
-    padding-top: 2em;
+    padding-top: 4em;
     width: 28%;
-  }
-
-  .entree_menu .tarif,
-  .plat_menu .tarif,
-  .dessert_menu .tarif {
-    margin-left: 7.5em;
   }
 
   .commande {
